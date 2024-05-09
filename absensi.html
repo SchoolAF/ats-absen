@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Alif Fathur | HeroBuxx</title>
+    <style>
+        body {
+          font-family: "Inter", sans-serif;
+        }
+      
+        .background-animate {
+          background-size: 400%;
+      
+          -webkit-animation: AnimationName 1s ease infinite;
+          -moz-animation: AnimationName 1s ease infinite;
+          animation: AnimationName 15s ease infinite;
+        }
+      
+        @keyframes AnimationName {
+          0%,
+          100% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+        }
+      </style>
+</head>
+<body>
+    <div class="w-full h-screen bg-gradient-to-r from-cyan-950 via-teal-750 to-slate-950 background-animate text-white"> 
+        <div id="content">
+
+            <div class="h-screen flex items-center justify-center">
+                <div class="bg-zinc-950 lg:mx-64 md:mx-16 rounded-2xl">
+                    <div class="grid lg:gap-4 sm:px-3 sm:py-3 md:px-6 md:py-6 lg:px-12 lg:py-12">
+
+                        <div class="relative overflow-x-auto">
+                            <h1 class="font-bold my-2 text-3xl">Data Absensi</h1>
+                            <table class="w-full text-sm text-left rtl:text-right text-zinc-500 dark:text-zinc-400">
+                                <thead class="text-xs text-zinc-700 uppercase bg-zinc-50 dark:bg-zinc-700 dark:text-zinc-400">
+                                    <tr>
+                                        <th scope="col" class="px-6 py-3 w-96">
+                                            Waktu Absen
+                                        </th>
+                                        <th scope="col" class="px-6 py-3 w-96">
+                                            Username
+                                        </th>
+                                        <th scope="col" class="px-6 py-3 w-96">
+                                            Status
+                                        </th>                                    </tr>
+                                </thead>
+                                <tbody id="absensi-tabel">
+                                    <td class="px-6 py-4">
+                                        Tidak Ada Data
+                                    </td>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>  
+            </div>  
+
+        </div>  
+    </div>
+    <script src="js/controller/user.js" type="module"></script>
+</body>
+</html>
