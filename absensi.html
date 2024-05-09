@@ -9,33 +9,35 @@
     <title>Alif Fathur | HeroBuxx</title>
     <style>
         body {
-          font-family: "Inter", sans-serif;
+            font-family: "Inter", sans-serif;
+            overflow-x: hidden; /* Prevent horizontal scrollbar */
         }
       
         .background-animate {
-          background-size: 400%;
-      
-          -webkit-animation: AnimationName 1s ease infinite;
-          -moz-animation: AnimationName 1s ease infinite;
-          animation: AnimationName 15s ease infinite;
+            background-size: 400%;
+            background-attachment: fixed; /* Fix the background */
         }
       
         @keyframes AnimationName {
-          0%,
-          100% {
-            background-position: 0% 50%;
-          }
-          50% {
-            background-position: 100% 50%;
-          }
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
         }
-      </style>
+
+        /* Add some padding to the top of the page to offset content */
+        #content {
+            padding-top: 96px; /* Adjust as needed */
+        }
+    </style>
 </head>
 <body>
-    <div class="w-full h-screen bg-gradient-to-r from-cyan-950 via-teal-750 to-slate-950 background-animate text-white"> 
+    <div class="min-h-screen bg-gradient-to-r from-cyan-950 via-teal-750 to-slate-950 background-animate text-white"> 
         <div id="content">
 
-            <div class="h-screen flex items-center justify-center">
+            <div class="flex items-center justify-center">
                 <div class="bg-zinc-950 lg:mx-64 md:mx-16 rounded-2xl">
                     <div class="grid lg:gap-4 sm:px-3 sm:py-3 md:px-6 md:py-6 lg:px-12 lg:py-12">
 
