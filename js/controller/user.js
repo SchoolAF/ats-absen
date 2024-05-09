@@ -1,5 +1,5 @@
-import { absenURL } from "/js/config/url.js";
-import { generateAbsenTable } from "/js/temp/absen.js";
+import { absenURL } from "./../config/url.js";
+import { generateAbsenTable } from "./../temp/absen.js";
 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);

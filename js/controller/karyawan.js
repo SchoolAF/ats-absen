@@ -1,5 +1,5 @@
-import { karyawanURL } from "../config/url.js";
-import { generateKaryawanTable } from "/js/temp/karyawan.js";
+import { karyawanURL } from "./../config/url.js";
+import { generateKaryawanTable } from "./../temp/karyawan.js";
 
 function displayKaryawan(karyawanData) {
     const tableBody = document.getElementById('karyawan-tabel');
